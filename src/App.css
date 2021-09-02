@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  --primary: #110f43;
+  --bg: #5ad2dd;
+  --bg2: #81ebf5;
+  --bgLight: rgba(255, 255, 255, 0.3);
+  --primaryFont : "Comfortaa", sans-serif;
+  --secFont : "Roboto";
+  --margin : 0.7rem 0;
+  --bigMargin : 1.5rem 0 ;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--primary);
+}
+body {
+  background-color: var(--bg);
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  font-family: var(--primaryFont);
+}
+#imgStatus{
+    display: flex;
+    justify-content: center;
+    margin: var(--bigMargin);
+}
+#imgStatus img{
+    width: 50%;
+    filter: drop-shadow(3px 10px 10px rgba(0, 0, 0, 0.2));
+}
+#root {
+  background-color: var(--bg2);
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.2);
+  overflow: scroll;
+  scrollbar-width: none;
+}
+#city,
+#country {
+    font-family: var(--secFont);
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: inline-block;
+
+}
+#city i {
+  font-size: 1.1rem;
+  transform: translateY(0.1rem);
+  padding-right: 0.5rem;
+}
+#city {
+  padding-right: 0.4rem;
+}
+#description {
+  font-weight: 400;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  margin: var(--margin);
+}
+#temp {
+  font-weight: 700;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin: var(--margin);
+}
+#windAndHumidity {
+  display: flex;
+  font-weight: 400;
+  font-size: 0.6rem;
+  justify-content: center;
+  opacity: 0.9;
+}
+#windAndHumidity i{
+    transform: translateY(0.1rem);
+    font-size: 0.9rem;
+    padding-right: 0.1rem;
+}
+#wind{
+    padding-right: 0.7rem;
+}
+input{
+  background-color: var(--bgLight);
+  border: none;
+  border-radius: 0.2rem;
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+#cityInput{
+  margin-top: 1rem;
+}
+button{
+  width: 100%;
+  background-color: transparent;
+  border: 3px solid var(--bgLight);
+  border-radius: 0.2rem;
+  height: 2rem;
+}
+#copyright{
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+#copyright a{
+  padding: 0 0.2rem ;
+}
